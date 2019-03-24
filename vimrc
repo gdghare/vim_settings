@@ -10,6 +10,11 @@ source $VIMRUNTIME/defaults.vim
 
 " Keep an undo file (undo changes after closing) if compiled with this feature enabled.
 if has('persistent_undo')
+  if has("gui_win32")
+    set undodir^="$TEMP,c:/tmp,c:/temp"
+  else
+    set undodir^="~/.vim/backup"
+  endif
   set undofile
 endif
 

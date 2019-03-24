@@ -1,0 +1,8 @@
+[submodule "pack/language/start/verilog_systemverilog"]
+	path = pack/language/start/verilog_systemverilog
+	url = https://github.com/vhda/verilog_systemverilog.vim
+	branch = master
+[submodule "pack/language/start/upf"]
+	path = pack/language/start/upf
+	url = https://github.com/vim-scripts/upf.vim.git
+	branch = master
