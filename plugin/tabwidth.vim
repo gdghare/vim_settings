@@ -4,7 +4,7 @@ if has("eval")
     " Set tabstop, shiftwidth, softtabstop consistently based on the arg tabw.
     " Enable expanding tabs to spaces if expand is true
     function SetTabWidth(tabw, expand)
-      execute "setlocal shiftwidth=".a:tabw." tabstop=".a:tabw." softtabstop=".a:tabw
+      execute "setlocal shiftwidth=".a:tabw." tabstop=".a:tabw." softtabstop=".a:tabw." shiftround"
       " Expand tabs to spaces
       if a:expand
         setlocal expandtab

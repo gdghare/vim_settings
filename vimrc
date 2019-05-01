@@ -31,13 +31,6 @@ augroup vimrcEx
   " Keep a backup file while writing
   set writebackup
 
-  " For all text files set 'textwidth' to 128 characters.
-  autocmd FileType text setlocal textwidth=128
-  set textwidth=128
-
-  set shiftwidth=2 softtabstop=2 tabstop=2
-  set shiftround expandtab
-
   " Display line numbers
   set number
 
