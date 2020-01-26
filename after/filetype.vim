@@ -20,7 +20,7 @@ if has("autocmd")
 
   augroup filetexttabwidth
 
-    autocmd FileType {python,perl,pod} call SetTabWidth(4,1)
+    autocmd FileType {python,perl,pod} call SetTabWidth(2,1)
     autocmd FileType {python,perl,pod} call SetTextWidth(120)
 
     autocmd FileType {c,cpp} call SetTabWidth(4,1)
@@ -43,6 +43,9 @@ if has("autocmd")
 
     autocmd FileType tcl call SetTabWidth(4,1)
     autocmd FileType tcl call SetTextWidth(120)
+
+    autocmd FileType yaml call SetTabWidth(2,1)
+    autocmd FileType yaml call SetTextWidth(120)
 
     " autocmd FileType diff call SetGuiWidth(250)
 

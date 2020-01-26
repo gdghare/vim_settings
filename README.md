@@ -1,8 +1,11 @@
 # vim_settings
 
+## Overview
+
 This repo contains vim settings.
 
-To use these:
+## Using this repo
+
 * Linux/Unix derivatives: place these in `$HOME/.vim`
 * Windows: place these in `$HOME/vimfiles`
 

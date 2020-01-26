@@ -15,7 +15,7 @@ if has('persistent_undo')
   else
     set undodir^="~/.vim/backup"
   endif
-  set undofile
+  "set undofile
 endif
 
 " Map F10 to toggle hlsearch

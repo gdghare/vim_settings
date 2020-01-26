@@ -16,7 +16,6 @@ if has("eval")
     " Set the text width and modify window width
     function SetTextWidth(width)
       execute "setlocal textwidth=".a:width
-      " call SetGuiWidth(a:width)
     endfunction
   endif
 
