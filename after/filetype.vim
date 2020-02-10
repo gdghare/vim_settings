@@ -1,24 +1,29 @@
 if has("autocmd")
 
-  augroup filetypedetect
-    au! BufRead,BufNewFile *.{txt,text} setfiletype text
-    au! BufRead,BufNewFile README setfiletype text
+  augroup treat_filetype_as_text
+    autocmd!
+    autocmd BufRead,BufNewFile *.{txt,text} setfiletype text
+    autocmd BufRead,BufNewFile README setfiletype text
+
   augroup END
 
   " Set file type to text if filetype has not been determined
   setfiletype text
 
   augroup fileignorecase
+    autocmd!
     " Ignore case on file types that are not case sensitive
     autocmd FileType html setlocal ignorecase
   augroup END
 
   augroup filesmartindent
+    autocmd!
     autocmd FileType text setlocal nosmartindent
     autocmd FileType verilog_systemverilog setlocal nosmartindent
   augroup END
 
   augroup filetexttabwidth
+    autocmd!
 
     autocmd FileType {python,perl,pod} call SetTabWidth(2,1)
     autocmd FileType {python,perl,pod} call SetTextWidth(120)
