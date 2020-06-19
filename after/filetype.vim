@@ -25,7 +25,7 @@ if has("autocmd")
   augroup filetexttabwidth
     autocmd!
 
-    autocmd FileType {python,perl,pod} call SetTabWidth(2,1)
+    autocmd FileType {python,perl,pod} call SetTabWidth(4,1)
     autocmd FileType {python,perl,pod} call SetTextWidth(120)
 
     autocmd FileType {c,cpp} call SetTabWidth(4,1)
