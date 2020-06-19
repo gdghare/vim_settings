@@ -25,8 +25,12 @@ if has("autocmd")
   augroup filetexttabwidth
     autocmd!
 
-    autocmd FileType {python,perl,pod} call SetTabWidth(4,1)
-    autocmd FileType {python,perl,pod} call SetTextWidth(120)
+    " Python PEP8 convention is to have this as 4
+    autocmd FileType python call SetTabWidth(4,1)
+    autocmd FileType python call SetTextWidth(120)
+
+    autocmd FileType {perl,pod} call SetTabWidth(4,1)
+    autocmd FileType {perl,pod} call SetTextWidth(120)
 
     autocmd FileType {c,cpp} call SetTabWidth(4,1)
     autocmd FileType {c,cpp} call SetTextWidth(120)
